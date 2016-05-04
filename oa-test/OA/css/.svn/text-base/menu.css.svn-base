@@ -1,0 +1,70 @@
+/*菜单*/
+table.ordered-table > tbody{
+	border: 2px solid #336666;
+}
+th.res-th{
+	text-align: center;
+	background-color: white;
+	border: none;
+	cursor: default;
+	width:20%;
+	max-width: 20%;
+}
+.res-tr > th.active-th{
+	background-color: #336666;
+	color: white;
+}
+
+/*餐厅*/
+ul.res-nav > li{
+	background: white;
+	padding: 10px;
+	text-align: center;
+	font-size: 18px;
+	cursor: pointer;
+	border:2px solid #336666;
+	border-bottom: none;
+}
+ul.res-nav > li:hover,
+ul.res-nav > li:focus,
+ul.res-nav > li.active{
+	background: #336666;
+	color: white;
+}
+
+/*菜单*/
+div.res-menu > p{
+	width: 25%;
+	text-align: center;
+	padding: 10px;
+	margin: 0px;
+	font-size: 18px;
+	float: left;
+	cursor: pointer;
+}
+div.res-menu > p:hover,
+div.res-menu > p:focus,
+div.res-menu > p.active{
+	background: #336666;
+	color: white;
+}
+
+/*修改成功*/
+div.modi-success{
+	left:45%;
+	top:50%;
+	box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.3);
+	display: none;
+}
+
+/*取消按钮*/
+button.cancel-btn{
+	margin: 0px;
+	margin-left: 10px;
+	color: #336666;
+}
+
+/*报表*/
+table.menuform > thead > th{
+	text-align: center;
+}

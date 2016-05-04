@@ -1,0 +1,56 @@
+$history_reimburses 历史报销单：
+[
+    {
+    id: "370",
+    category: "office",
+    total: "500.00",
+    user_id: "115",
+    receipt_num: "3",
+    way: "transfer",
+    bank_info: "招商银行 8888888888888888",
+    payee: "易良慧",
+    borrow_amount: "0.00",
+    update_time: "2015-12-23 23:13:11",
+    create_time: "2015-12-23 23:13:11",
+    status: null
+    }
+    .....
+]
+
+申请单：$goods_apply_list
+[
+    {
+        id: "1260",
+        apply_id: "534",
+        name: "sda",
+        url: "",
+        price: "23658.00",
+        quantity: "1次",
+        category: "test",
+        type: "",
+        reason: "dasdas",
+        use_time: "0000-00-00",
+        buy_way: "自行支付",
+        path: "",
+        is_reimburse: "no",
+        create_time: "2015-12-17 15:38:18",
+        status: "cancle"
+    },
+    {
+        id: "1259",
+        apply_id: "533",
+        name: "dasd",
+        url: "",
+        price: "213.00",
+        quantity: "1次",
+        category: "test",
+        type: "",
+        reason: "dsad",
+        use_time: "0000-00-00",
+        buy_way: "自行支付",
+        path: "",
+        is_reimburse: "no",
+        create_time: "2015-12-17 15:07:39",
+        status: "success"
+    },
+]

@@ -1,0 +1,508 @@
+body{
+	margin:0px;
+	padding:0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+	font-family: "Microsoft YaHei" ! important;
+}
+
+input,button,select,textarea{
+	outline:none
+} 
+
+div.main{
+	width:100%;
+	height:100%;
+}
+
+.top-btn:hover,
+.top-btn:focus,
+.top-btn.active{
+	color: #669999;
+}
+
+/*水平导航栏*/
+div.toptoolsnav{
+	border-radius: 15px;
+	border:2px solid #669999;
+}
+
+ul.main-nav > li{
+	padding-top: 3px;
+	padding-bottom: 3px;
+	border-right: none;
+}
+ul.main-nav > li:hover,
+ul.main-nav > li:focus,
+ul.main-nav > li.active{
+	/*background: #003333;*/
+	background: #336666;
+	color: white;
+}
+ul.main-nav > li.active >a,
+ul.main-nav > li:hover >a{
+	color: white;
+}
+
+ul.main-nav > li > a:hover,
+ul.main-nav > li > a:focus{
+	background: transparent;
+}
+
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus,
+.nav .open > a:active{
+    border-color: white;
+}
+ul.main-nav > li > a{
+	background-color: transparent;
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+	padding: 5px;
+	color: #336666;
+	cursor: pointer;
+	
+}
+
+.nav>li>a:hover,
+ .nav>li>a:focus{
+ 	background: #336666;
+ 	color: white;
+ }
+/*ul.main-nav > li > a:hover,
+ul.main-nav > li > a:focus,
+ul.main-nav > li > a.active{
+	background: transparent;
+	color: white;
+}
+*/
+
+/*面包屑*/
+div.breadcrumbs{
+	margin: 0 auto;
+	width: 1300px;
+	font-size: 18px;
+	padding: 5px;
+	padding-left: 10px;
+	position: relative;
+	margin-bottom: 5px;
+}
+div.breadcrumbs > a{
+	color: inherit;
+}
+div.breadcrumbs > span{
+	cursor: default;
+}
+div.breadcrumbs > a:first-child{
+	font-size: 22px;
+}
+
+/*侧边导航栏*/
+div.guide-div > a{
+	margin: 0px;
+	padding: 0px 0px 0px 5px ;
+	height: 40px; 
+	display: block;
+	color: inherit;
+	cursor: default;
+	position: relative;
+	background: white;
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	/*box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);*/
+}
+div.guide-div > a:first-child{
+	border-top: none;
+}
+
+div.guide-div > a:hover,
+div.guide-div > a:focus,
+div.guide-div > a.active{
+	text-decoration: none;
+}
+div.guide-div > a > h4{
+	margin: 0px;
+	width: 100%;
+	padding: 10px;
+	font-size: 18px;
+	height: 100%;
+	color: #336666;
+	vertical-align: middle;
+}
+
+div.guide-div > ul > li > a:hover,
+div.guide-div > ul > li > a:focus,
+div.guide-div > ul > li > a.active{
+	color: #669999;
+	background: #f2f2f2;
+}
+div.guide-div{
+	width: 196px;
+	border:1px solid #ddd;
+}
+
+/*各模块下的ul*/
+ul.page-nav > li:hover,
+ul.page-nav > li:focus,
+ul.page-nav > li.active{
+	/*background: #336666;*/
+}
+ul.page-nav > li > a{
+	color: inherit;
+	padding:10px 10px 10px 40px;
+	/*text-align: center;*/
+	font-size: 15px;
+}
+ul.page-nav > li > a:hover,
+ul.page-nav > li > a:focus,
+ul.page-nav > li > a.active{
+	/*color: white;
+	background: #336666;*/
+}
+ul.page-nav{
+	background: #fafafa;
+}
+
+
+
+/*消息提示框*/
+div.hint{
+	background: white;
+	top: 10%;
+	left: 42%;
+	min-width: 300px;
+	box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.3);
+}
+h4.hint-title{
+	width: 100%;
+	color: white;
+	margin: 0px;
+}
+h3.hint-content{
+	width: 100%;
+	margin: 0px;
+	text-align: center;
+	font-size: 15px;
+}
+div.hint-btns{
+	width: 100%;
+	padding: 5px;
+	margin: 0px;
+	padding-bottom: 10px;
+}
+
+/**
+ * CSS styles for CLinkPager.
+ *
+ * @author Qiang Xue <qiang.xue@gmail.com>
+ * @link http://www.yiiframework.com/
+ * @copyright Copyright &copy; 2008-2010 Yii Software LLC
+ * @license http://www.yiiframework.com/license/
+ * @since 1.0
+ */
+
+ul.yiiPager
+{
+	font-size:15px;
+	font-family: "Microsoft YaHei";
+	border:0;
+	margin:0;
+	padding:0;
+	line-height:100%;
+	display:inline;
+}
+
+ul.yiiPager li
+{
+	display:inline;
+}
+
+ul.yiiPager a:link,
+ul.yiiPager a:visited
+{
+	border:solid 1px rgb(200,200,200);
+	color:inherit;
+	padding:3px 6px;
+	text-decoration:none;
+}
+
+ul.yiiPager .page a
+{
+	font-weight:normal;
+}
+
+ul.yiiPager a:hover
+{
+	border:solid 1px #336666;
+}
+
+ul.yiiPager .selected a
+{
+	background:#336666;
+	color:#FFFFFF;
+	font-weight:bold;
+}
+
+ul.yiiPager .hidden a
+{
+	border:solid 1px #DEDEDE;
+	color:#888888;
+}
+
+/**
+ * Hide first and last buttons by default.
+ */
+ul.yiiPager .first,
+ul.yiiPager .last
+{
+	display:inline;
+}
+
+/*表格的设置*/
+.table > thead > tr > th,
+ .table > tbody > tr > th,
+  .table > tfoot > tr > th,
+   .table > thead > tr > td,
+    .table > tbody > tr > td,
+     .table > tfoot > tr > td {
+    vertical-align: middle;
+}
+
+table.structure-table > tbody > tr > td{
+	border: none;
+}
+
+table{
+	word-break:break-all;
+}
+
+/*新消息提示框*/
+div.newMsg-div{
+	position: absolute;
+	display: none;
+	background: white;
+	bottom:0px;
+	right:0px;
+	width: 300px;
+	padding: 0px;
+	padding-bottom: 50px;
+	border: 2px solid #336666;
+}
+
+/*进度条*/
+li.flow-li:after{
+	display: block;/*很重要，不然会有多余的px,且top left等也不能对齐*/
+    content: "";
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0px;
+    z-index: 10;
+    left: 100%;
+    border: 29px solid transparent;
+    border-left: 29px solid #669999;
+}
+li.flow-li-red:after{
+	display: block;/*很重要，不然会有多余的px,且top left等也不能对齐*/
+    content: "";
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    border: 29px solid transparent;
+    border-left: 29px solid #993333;
+}
+
+/*个人资料*/
+span.info-edit-span:hover,
+span.info-edit-span:focus,
+span.info-edit-span:active{
+	color: #669999;
+}
+
+/*会议室和面试*/
+div.meeting-div{
+	cursor: pointer;
+}
+div.meeting-div:hover,
+div.meeting-div:focus,
+div.meeting-div:active{
+	background: #669999;
+	color:white;
+}
+
+
+/*用户界面的导航栏*/
+ul.user-main-ul > li:hover,
+ul.user-main-ul > li:focus,
+ul.user-main-ul > li.active{
+	background: #669999;
+}
+
+/*灰色的a*/
+a.hover-ddd:hover,
+a.hover-ddd:active,
+a.hover-ddd:focus{
+	color: #ddd;
+}
+
+/*不带边框的table*/
+.table-unbordered>thead>tr>th,
+ .table-unbordered>tbody>tr>th,
+  .table-unbordered>tfoot>tr>th,
+   .table-unbordered>thead>tr>td,
+    .table-unbordered>tbody>tr>td,
+     .table-unbordered>tfoot>tr>td{
+     	border-top: none;
+     	border-bottom: 1px solid white;
+     }
+
+/*用户界面首页的渐变色*/
+@keyframes userIndexDiv
+{
+	0%{
+		background: #336666;
+	}
+	100%{
+		background: #669999;
+	}
+}
+@-moz-keyframes userIndexDiv
+{
+	0%{
+		background: #336666;
+	}
+	100%{
+		background: #669999;
+	}
+}
+@-webkit-keyframes userIndexDiv
+{
+	0%{
+		background: #336666;
+	}
+	100%{
+		background: #669999;
+	}
+}
+div.user-index-div:hover{
+	animation: userIndexDiv 0.8s;
+	-moz-animation: userIndexDiv 0.8s;
+	-webkit-animation: userIndexDiv 0.8s;
+	animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+/*意见反馈框*/
+div.opinion-button-div{
+	position: absolute;
+	bottom:50%;
+	left:0px;
+	padding: 10px;
+	border-radius:5px;
+	left:-5px;
+	cursor: pointer;
+	border: 2px solid #336666;
+}
+
+.table>thead>tr>th{
+	border-bottom: 1px solid #ddd;
+}
+
+/*用户界面的树形结构*/
+.tree {
+  width:100%;
+}
+.tree li {
+  list-style-type:none;
+  margin:0;
+  padding:20px 5px 0 5px;
+  position:relative
+}
+.tree li::before, .tree li::after {
+  content:'';
+  left:-15px;
+  position:absolute;
+  right:auto
+}
+.tree li::before {
+  border-left:1px solid #ddd;
+  bottom:50px;
+  height:100%;
+  top:0;
+  width:1px
+}
+.tree li::after {
+  border-top:1px solid #ddd;
+  height:20px;
+  top:45px;
+  width:20px
+}
+.tree li span {
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border:1px solid #999;
+  border-radius:5px;
+  display:inline-block;
+  padding:10px 16px;
+  text-decoration:none;
+  cursor: pointer;
+}
+.tree li.parent_li>span {
+  cursor:pointer
+}
+.tree>ul>li::before, .tree>ul>li::after {
+  border:0;
+}
+.tree li:last-child::before {
+  height:45px
+}
+.tree li.parent_li>span:hover, .tree li.parent_li>span:hover+ul li span {
+  background:#eee;
+  border:1px solid #94a0b4;
+  color:#000;
+}
+.tree span:hover{
+	background:#eee;
+  	border:1px solid #94a0b4;
+  	color:#000
+}
+.tree > ul{
+	padding: 0px;
+}
+.tree span.active{
+	background: #5CB85C;
+	color: white;
+}
+.tree span{
+	text-align: center;
+	background:#fbfbfb;
+	width:225px;
+}
+
+.oatree span{
+	text-align: center;
+	background:#fbfbfb;
+	width:130px;
+}
+
+/*用于显示的pre*/
+pre.show-pre{
+	background: transparent;
+	border: none;
+	font-family: "Microsoft YaHei" ! important;
+}
+
+a.hover-red:hover{
+	color: red;
+}

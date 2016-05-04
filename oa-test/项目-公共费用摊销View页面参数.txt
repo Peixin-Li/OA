@@ -1,0 +1,82 @@
+1、项目管理页面 projectManage.php
+    /oa/projectManage
+    全部为JSON格式
+
+    department_list(部门列表)
+    [
+        {
+            department_id: "1",             部门ID
+            name: "总经理办公室",           部门名称
+            .....
+        },
+        {
+            department_id: "2",
+            name: "人事行政部",
+            .....
+        }
+    ]
+
+    user_list(部门列表)
+    [
+        {
+            user_id: "1",           用户ID
+            cn_name: "ceo",         中文名
+            title: "总经理",        职位
+            .....
+        },
+        {
+            user_id: "2",
+            cn_name: "ceo",
+            title: "总经理",
+            .....
+        },
+        。。。
+    ]
+
+    project_list（项目列表）
+    [
+        {
+            project_id: "4",                    项目ID
+            serial_number: "SY0025",            项目编号
+            name: "项目1",                      项目名
+            department_id: "1",                 项目所属部门id
+            project_admin: "111",               项目负责人ID
+            remark: null,                       项目备注说明
+            ....
+        },
+        {
+            project_id: "5",
+            serial_number: "SY0045",
+            name: "项目1",
+            department_id: "1",
+            project_admin: "111",
+            remark: null,
+            ...
+        }
+        ...
+    ]
+
+2、费用模板管理
+    /oa/feeTplManage
+    全部为JSON格式
+
+    页面参数：department_list、user_list
+        fee_tpl_list（费用模板）:
+        [
+            {
+                tpl_id: "1",                        模板ID
+                name: "测试tpl",                    模板名
+                fee_div_p: "{"4":40,"5":60}",       费用分摊比例 '项目ID':百分比
+                update_time: "2015-12-31 13:36:06", 
+                remark: "231",                      备注说明
+                enable: "yes"
+            },
+            {
+                tpl_id: "1",
+                name: "测试tpl",
+                fee_div_p: "{"4":40,"5":60}",
+                update_time: "2015-12-31 13:36:06",
+                remark: "231",
+                enable: "yes"
+            }
+        ]

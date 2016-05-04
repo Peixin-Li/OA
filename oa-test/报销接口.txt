@@ -1,0 +1,65 @@
+1、编辑报销单
+    /ajax/editReimburse
+    POST参数 id、way、bank_info、bank_code、payee、borrow_amount、receipt_num
+
+    *@param string $way array('transfer','borrow') 报销方式 转账/借支
+    *@param string $bank_info  开户支行信息
+    *@param string $bank_code  银行卡号
+    *@param string $payee      收款人
+    *@param string $borrow_amount 借支金额
+    *@param string $receipt_num   发票张数
+
+    返回值：
+    {
+        code: 0,
+        msg : 'ok',
+    }
+    返回值说明： 0：成功，-2：参数错误，-3：找不到该申请单，-4：报销单已经提交
+      -98：无权限修改
+
+2、获取报销清单信息
+    /ajax/getReimburseList
+    POST参数: id(报销单ID)
+    返回值：
+    {
+        code: 0,
+        msg: "ok",
+        data: [
+            {
+                id: "1255",
+                apply_id: "529",
+                name: "dasd",
+                url: "",
+                price: "2563.00",
+                quantity: "1次",
+                category: "office",
+                type: "快递费",
+                reason: "dasdf",
+                use_time: "0000-00-00",
+                buy_way: "自行支付",
+                path: "",
+                is_reimburse: "no",
+                create_time: "2015-12-16 20:41:20",
+                remark: null
+            },
+            {
+                id: "1256",
+                apply_id: "530",
+                name: "ad",
+                url: "",
+                price: "5220.00",
+                quantity: "20次",
+                category: "office",
+                type: "快递费",
+                reason: "dasd",
+                use_time: "0000-00-00",
+                buy_way: "自行支付",
+                path: "",
+                is_reimburse: "no",
+                create_time: "2015-12-16 20:42:18",
+                remark: null
+            }
+        ]
+    }
+
+    返回值说明： 0：成功，-2：参数错误，-3：找不到该报销单

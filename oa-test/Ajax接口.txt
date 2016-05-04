@@ -1,0 +1,21 @@
+1、取消费用申请单
+    /ajax/cancleGoodsApply
+    POST参数 detail_id、reason
+
+    返回值：
+    {
+        code: 0,
+        msg : 'ok',
+    }
+    返回值说明： 0：成功，-2：参数错误，-3：找不到该申请单，-4：此申请单已经取消，
+                 -5：此申请单已经报销，-99：无权限取消申请单
+
+2、修改申请单
+/ajax/EditGoodsApply
+
+'id'=>1450, 
+'category'=>'property',
+'type'=>'', 
+'price'=>'235.7',
+'reason'=>'测试',
+'name' => '修改'

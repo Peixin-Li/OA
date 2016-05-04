@@ -1,0 +1,24 @@
+/*详细信息表格*/
+table.details-table > thead > tr > th{
+	text-align: center;
+	min-width: 60px;
+}
+table.details-table > tbody > tr > td{
+	vertical-align: middle;
+}
+
+/*确认取消部门负责人弹出框*/
+div.confirmCancel-div{
+	left:40%;
+	top:50%;
+	box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.3);
+	display: none;
+}
+
+div.editEmployee-div{
+	left:40%;
+	top:50%;
+	box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.3);
+	display: none;
+}
+

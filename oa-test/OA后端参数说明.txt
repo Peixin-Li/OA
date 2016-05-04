@@ -1,0 +1,77 @@
+1、OA－流程管理
+    1)、procedure_list：  JSON， 格式如下：
+[
+    {
+        procedure_id: "1",        //ID号
+        user_role: "d_admin",     //角色类型 d_admin(主管)、d2_admin(上级部门主管)、hr_admin(人事主管)、CEO
+        type: "leave",            //流程类型 out(出差)，overtime(加班)、goods_apply(费用申请)、leave(请假)
+        value: "0",               //值
+        procedure_order: "1"      //流程序列编号
+    },
+    {
+        procedure_id: "2",
+        user_role: "hr_admin",
+        type: "leave",
+        value: "3",
+        procedure_order: "2"
+    },
+    {
+        procedure_id: "3",
+        user_role: "ceo",
+        type: "leave",
+        value: "5",
+        procedure_order: "3"
+    }
+    .....
+]
+
+删除流程节点 ajax接口
+    URL： /ajax/delProcedure
+    type: post
+    dataType: json
+    data: {'procedure_id':  }
+
+    操作成功时的返回值
+    {
+        code: 0,
+        msg: "ok"
+    }
+    其他返回值(code的值)： -3(参数错误)，-1(操作失败)，-90(无权限删除)
+
+修改流程节点 ajax接口
+    URL： /ajax/editProcedure
+    type: post
+    dataType: json
+    data: {
+        procedure_id: "1",        //ID号
+        user_role: "d_admin",     //角色类型 d_admin(主管)、d2_admin(上级部门主管)、hr_admin(人事主管)、CEO
+        type: "leave",            //流程类型 out(出差)，overtime(加班)、goods_apply(费用申请)、leave(请假)
+        value: "0",               //流程的条件判断值
+    }
+
+    操作成功时的返回值
+    {
+        code: 0,
+        msg: "ok"
+    }
+    其他返回值(code的值)： -3(参数错误)，-4(type或者user_role取值不正确)，-5(找不到该流程节点)，-90(无权限修改)
+
+
+添加流程节点：
+    URL： /ajax/addProcedure
+    type: post
+    dataType: json
+    data: {
+        user_role: "d_admin",     //角色类型 d_admin(主管)、d2_admin(上级部门主管)、hr_admin(人事主管)、CEO
+        type: "leave",            //流程类型 out(出差)，overtime(加班)、goods_apply(费用申请)、leave(请假)
+        value: "0",               //流程的条件判断值
+        procedure_order: "1"      //流程序列编号
+    }
+    操作成功时的返回值
+    {
+        code: 0,
+        msg: "ok"
+    }
+    其他返回值(code的值)： -3(参数错误)，-4(type或者user_role取值不正确)，
+        -5(user_role已经存在于该流程中)，-6(procedure_order 错误，流程中已经存在该序列号)
+        -90(无权限修改)

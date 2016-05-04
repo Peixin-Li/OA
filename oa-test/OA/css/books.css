@@ -1,0 +1,19 @@
+/*图书列表表格*/
+table.booklist{
+	background-color: white;
+	font-size: 15px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+table.booklist > tbody > tr > td {
+	padding: 10px;
+}
+
+/*新增分类弹出框*/
+div.newCategory-div{
+	left:40%;
+	top:50%;
+	box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.3);
+	display: none;
+}
+
